@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
     <title>Tour & Travel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -39,6 +43,8 @@
     <section class="home" id="home">
    
       <div class="slider">
+         <div class="slide" style="background: url(images/home1.jpg) no-repeat center/cover;"></div>
+        <div class="slide" style="background: url(https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg) no-repeat center/cover;"></div>
         <div class="slide" style="background: url(https://images.pexels.com/photos/691637/pexels-photo-691637.jpeg) no-repeat center/cover;"></div>
         <div class="slide" style="background: url(https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg) no-repeat center/cover;"></div>
     <div class="slide" style="background: url(https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg) no-repeat center/cover;"></div>
@@ -177,22 +183,22 @@
           <h1>Contact us</h1>
         </div>
         <div class="contact-form">
-            <form  action="https://formspree.io/f/myyrpbwz"
-            method="POST">
-          <div class="input-fields">
-            
-            <input type="text" class="input"  placeholder="Name" name="name">
-            <input type="email" class="input"  placeholder="Email Address" name="email" pattern=".+@gmail\.com">
-            <input type="phone" class="input"  placeholder="Phone" name="phone">
-            <input type="text" class="input"  placeholder="Subject" name="subject">
-          </div>
-          <div class="msg">
-            <textarea placeholder="Message" name="message"></textarea> <br>
-            <div class="btn1"><button type="submit" name="submit">send <i class="uil uil-message"></i></div>
-          </div>
-          </form>
-        </div>
-        </div> 
+          <form action="sendmail.php" method="POST">
+  <div class="input-fields">
+    <input type="text" class="input" placeholder="Name" name="name" required>
+    <input type="email" class="input" placeholder="Email Address" name="email" required>
+    <input type="tel" class="input" placeholder="Phone" name="phone">
+    <input type="text" class="input" placeholder="Subject" name="subject">
+  </div>
+  <div class="msg">
+    <textarea placeholder="Message" name="message" required></textarea> <br>
+    <div class="btn1">
+      <button type="submit" name="submit">Send <i class="uil uil-message"></i></button>
+    </div>
+  </div>
+</form>
+
+
     
     </section>
     <section class="footer">
